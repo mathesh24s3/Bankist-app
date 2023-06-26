@@ -1,0 +1,188 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f3f3;
+  transition: all;
+}
+
+input {
+  border: none;
+  text-indent: 20px;
+  border-radius: 20px;
+  padding: 0.6rem;
+  font: inherit;
+}
+
+.form--btn {
+  background: transparent;
+  border: none;
+  font-size: 2em;
+  font: inherit;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  background-color: black;
+  border-radius: 50%;
+  padding: 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.login--input {
+  background: white;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.login--btn:hover {
+  color: rgb(84, 82, 82);
+}
+
+main {
+  transition: all 0.2s ease-in;
+  width: 80%;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  opacity: 0;
+  position: relative;
+}
+
+.section--balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  grid-column: 1/3;
+}
+
+.balance--label {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.date--label {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  color: gray;
+  word-spacing: 5px;
+}
+
+.balance--amnt {
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.movements--container {
+  list-style-type: none;
+  width: 90%;
+  padding: 0;
+  max-height: 24rem;
+  overflow-y: scroll;
+}
+
+.movement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 0.5rem;
+}
+
+.movement--type {
+  font-weight: 200;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* .type--deposit {
+  background: linear-gradient(135deg, rgb(132, 239, 142), rgb(59, 237, 59));
+}
+
+.type--withdrawal {
+  background: linear-gradient(135deg, rgb(239, 193, 132), rgb(237, 65, 59));
+} */
+
+.deposit {
+  color: green;
+}
+
+.withdrawal {
+  color: red;
+}
+
+.operation {
+  width: 90%;
+  /* background-color: black; */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.operation > form > input {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.transfer {
+  background: linear-gradient(135deg, rgb(132, 239, 142), rgb(59, 237, 59));
+}
+
+.request {
+  background: linear-gradient(135deg, rgb(132, 200, 239), rgb(59, 181, 237));
+}
+
+.close-acnt {
+  background: linear-gradient(135deg, rgb(239, 193, 132), rgb(237, 89, 59));
+}
+
+.summary--section {
+  display: flex;
+}
+
+.summary--section > p {
+  margin: 2rem;
+  word-spacing: 10px;
+}
+
+.income--amnt {
+  font-size: 1.5rem;
+  color: rgb(119, 224, 119);
+}
+
+.outcome--amnt {
+  font-size: 1.5rem;
+  color: rgb(246, 156, 138);
+}
+
+.interest--amnt {
+  font-size: 1.5rem;
+  color: rgb(153, 211, 237);
+}
+
+.sort--btn {
+  position: absolute;
+  bottom: 15%;
+  background-color: rgb(30, 28, 28);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+}

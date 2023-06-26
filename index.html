@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Poppins:wght@200;300;500&family=Press+Start+2P&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script src="app.js" defer></script>
+    <title>Bankist App</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2 class="welcome--label">Log in to get started</h2>
+        <img src="icon.png" alt="icon" class="logo" />
+        <form method="post" action="/" class="login-form">
+          <input
+            type="text"
+            placeholder="user"
+            class="login--input login--user"
+          />
+          <input
+            type="number"
+            placeholder="PIN"
+            class="login--input login--pin"
+            maxlength="4"
+          />
+          <button class="form--btn login--btn">&rarr;</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section--balance">
+        <p class="balance--label">Current balance</p>
+        <p class="date--label">
+          As of <span class="date">25</span>/<span class="month">05</span>/<span
+            class="year"
+            >2023</span
+          >
+        </p>
+        <p class="balance--amnt">0$</p>
+      </section>
+      <section class="movements--section">
+        <ol class="movements--container">
+          <li class="movement">
+            <p class="movement--type">Deposit</p>
+            <p class="movement--amnt deposit">1000$</p>
+          </li>
+          <li class="movement">
+            <p class="movement--type">withdrawal</p>
+            <p class="movement--amnt withdrawal">1000$</p>
+          </li>
+          <li class="movement">
+            <p class="movement--type">withdrawal</p>
+            <p class="movement--amnt">1000$</p>
+          </li>
+          <li class="movement">
+            <p class="movement--type">withdrawal</p>
+            <p class="movement--amnt">1000$</p>
+          </li>
+          <li class="movement">
+            <p class="movement--type">withdrawal</p>
+            <p class="movement--amnt">1000$</p>
+          </li>
+          <li class="movement">
+            <p class="movement--type">withdrawal</p>
+            <p class="movement--amnt">1000$</p>
+          </li>
+          <li class="movement">
+            <p class="movement--type">withdrawal</p>
+            <p class="movement--amnt">1000$</p>
+          </li>
+          <li class="movement">
+            <p class="movement--type">withdrawal</p>
+            <p class="movement--amnt">1000$</p>
+          </li>
+          <li class="movement">
+            <p class="movement--type">withdrawal</p>
+            <p class="movement--amnt">1000$</p>
+          </li>
+        </ol>
+      </section>
+      <section class="operation--section">
+        <div class="operation transfer">
+          <p>Transfer money</p>
+          <form action="/" class="transfer--form">
+            <input
+              type="text"
+              class="transfer--input transfer-to"
+              placeholder="Transfer to"
+            />
+            <input
+              type="number"
+              class="transfer--input amount"
+              placeholder="Amount"
+            />
+            <button class="form--btn transfer--btn">&rarr;</button>
+          </form>
+        </div>
+        <div class="operation request">
+          <p>Request loan</p>
+          <form action="/" class="request--form">
+            <input
+              type="number"
+              class="request--input amount"
+              placeholder="Amount"
+            />
+            <button class="form--btn request--btn">&rarr;</button>
+          </form>
+        </div>
+        <div class="operation close-acnt">
+          <p>Close account</p>
+          <form action="/" class="close-acnt--form">
+            <input
+              type="text"
+              class="close-acnt--input confirm-user"
+              placeholder="Confirm user"
+            />
+            <input
+              type="number"
+              class="close-acnt--input confirm-pin"
+              placeholder="Confirm PIN"
+            />
+            <button class="form--btn close-acnt--btn">&rarr;</button>
+          </form>
+        </div>
+      </section>
+      <section class="summary--section">
+        <p class="income--label">IN <span class="income--amnt"></span></p>
+        <p class="outcome--label">OUT <span class="outcome--amnt"></span></p>
+        <p class="income--label">
+          INTEREST <span class="interest--amnt"></span>
+        </p>
+      </section>
+      <button class="sort--btn">sort</button>
+    </main>
+    <footer>
+      <p>You will be logged out in <span></span></p>
+    </footer>
+  </body>
+</html>
